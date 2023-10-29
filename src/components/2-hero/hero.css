@@ -1,0 +1,32 @@
+section.hero {
+  margin-top: 3rem;
+}
+section.hero .left-section {
+  flex-grow: 1;
+}
+section.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--yellow);
+}
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin-bottom: 32px;
+}
+section.hero .all-icons {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+section.hero .all-icons a {
+  color: var(--subtitle);
+}
+section.hero .all-icons a:hover {
+  font-size: 1.5rem;
+  color: var(--yellow);
+  cursor: pointer;
+}

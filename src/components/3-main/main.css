@@ -1,0 +1,62 @@
+main.flex {
+  gap: 2.6rem;
+  align-items: start;
+}
+.card {
+  border: 1px solid var(--yellow);
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+.card:hover {
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+}
+main section.right-section {
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 2rem;
+}
+
+.card .box {
+  padding: 1rem 0.4rem;
+}
+.card .box .title {
+  color: var(--yellow);
+}
+.card .box .sub-title {
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+.card .icon-link,
+.card .icon-github {
+  color: var(--subtitle);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.card .icon-link:hover,
+.card .icon-github:hover {
+  color: var(--yellow);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+    gap: 2.64;
+    align-items: center;
+  }
+  main section.left-section {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
